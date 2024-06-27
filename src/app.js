@@ -25,11 +25,7 @@ app.use(function (req, res, next) {
 
   next();
 });
-app.use(cors({
-  origin: 'http://localhost:3000',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-}));
+app.use(cors());
 
 dotenv.config();
 
