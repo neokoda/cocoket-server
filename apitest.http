@@ -1,0 +1,44 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "fullName": "Ridho Putra",
+    "birthDate": "2004-07-13",
+    "address": "Jalan Malang",
+    "username": "ridhoputra",
+    "password": "Ridho123"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "yusril123",
+    "password": "Yusr123!"
+}
+
+###
+
+GET http://localhost:5000/api/auth/login
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImVtYWlsIjoiakBhLmNvbSIsImZ1bGxuYW1lIjoiRHVtIE15IiwicGFzc3dvcmQiOiIkMmEkMTAkcDV4dW1ELmZqSUV1UHg3ZXRRTXEyZWVWMXVxSHl1cm9aWFhYYWVoNEpNZnBMMUQwWkRCclMiLCJpYXQiOjE3MDU4Njk3MjZ9.Ty6fe5Etzc8kAs_yrVWly-18v43nyG6czjMf6IZG3Uo
+
+###
+
+GET http://localhost:5000/api/auth/login
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImNyZWF0ZWRfYXQiOiIyMDI0LTA2LTIxVDExOjM2OjUzLjE1M1oiLCJmdWxsX25hbWUiOiJZdXNyaWwgRmF6cmkiLCJiaXJ0aF9kYXRlIjoiMjAwNC0wNC0xN1QwMDowMDowMC4wMDBaIiwiYWRkcmVzcyI6IkpsLiBLZW1hbmdnaXNhbiBSYXlhIiwidXNlcm5hbWUiOiJ5dXNyaWwxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRydlMxaWVGLlU4S2ZVc2pLU240UU0uRksucmk5cW1kNElGaWR6WDZSSFVBSjNneDdaeWZtMiIsInBvaW50cyI6NTAsImlhdCI6MTcxOTMzODI3OH0.NmIxGOSkEo4icEi13S04-VKiAgG9hUAeQG_pMf957Jc
+
+###
+
+GET http://localhost:5000/api/auth/user?username=yusril123
+
+###
+
+PATCH http://localhost:5000/api/auth/userPoints
+Content-Type: application/json
+
+{
+    "id": 21,
+    "pointsToAdd": "696"
+}
